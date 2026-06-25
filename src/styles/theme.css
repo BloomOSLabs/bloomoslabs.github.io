@@ -1,0 +1,92 @@
+:root {
+    color-scheme: dark;
+
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-2xl: 32px;
+    --radius-full: 9999px;
+
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-3: 12px;
+    --spacing-4: 16px;
+    --spacing-5: 20px;
+    --spacing-6: 24px;
+    --spacing-8: 32px;
+    --spacing-10: 40px;
+    --spacing-12: 48px;
+    --spacing-16: 64px;
+
+    --shadow-1: 0 1px 2px rgb(0 0 0 / .08);
+    --shadow-2: 0 4px 8px rgb(0 0 0 / .10);
+    --shadow-3: 0 8px 20px rgb(0 0 0 / .12);
+}
+
+html[data-theme='dark'] {
+    color-scheme: dark;
+
+    --md-primary: #8CE7E3;
+    --md-on-primary: #003736;
+
+    --md-primary-container: #174E4C;
+    --md-on-primary-container: #B8FFF8;
+
+    --md-surface: #121414;
+    --md-surface-dim: #0D0F0F;
+    --md-surface-bright: #363838;
+
+    --md-surface-container-lowest: #0B0D0D;
+    --md-surface-container-low: #181A1A;
+    --md-surface-container: #1D1F1F;
+    --md-surface-container-high: #262828;
+    --md-surface-container-highest: #313333;
+
+    --md-on-surface: #ECEDEC;
+    --md-on-surface-variant: #C2C8C7;
+
+    --md-outline: #889392;
+    --md-outline-variant: #414A49;
+
+--ripple-light: rgb(255 255 255 / .45);
+--ripple-dark: rgb(255 255 255 / .30);
+
+    --text-primary: var(--md-on-surface);
+    --text-secondary: var(--md-on-surface-variant);
+    --text-tertiary: color-mix(in srgb, var(--md-on-surface) 60%, transparent);
+}
+
+html[data-theme='light'] {
+    color-scheme: light;
+
+    --md-primary: #006A67;
+    --md-on-primary: #FFFFFF;
+
+    --md-primary-container: #8CE7E3;
+    --md-on-primary-container: #00201F;
+
+    --md-surface: #FCFDFC;
+    --md-surface-dim: #D8DBDA;
+    --md-surface-bright: #FCFDFC;
+
+    --md-surface-container-lowest: #FFFFFF;
+    --md-surface-container-low: #F6F8F7;
+    --md-surface-container: #F0F2F1;
+    --md-surface-container-high: #EAECEB;
+    --md-surface-container-highest: #E4E6E5;
+
+    --md-on-surface: #1A1C1C;
+    --md-on-surface-variant: #434948;
+
+    --md-outline: #737C7B;
+    --md-outline-variant: #C2C8C7;
+
+    --ripple-light: rgb(255 255 255 / .28);
+    --ripple-dark: rgb(0 0 0 / .10);
+
+    --text-primary: var(--md-on-surface);
+    --text-secondary: var(--md-on-surface-variant);
+    --text-tertiary: color-mix(in srgb, var(--md-on-surface) 60%, transparent);
+}
