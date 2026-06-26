@@ -11,23 +11,25 @@ export interface Device {
     manufacturer: string
     androidVersion: string
     maintainers: Maintainer[]
+    image?: string
     status: "Official" | "Community"
 }
 
 export const devices: Device[] = [
     {
         name: 'OPPO A31',
-        codename: 'OP4C7D',
+        codename: 'OP4C7D, CPH2015',
         manufacturer: 'OPPO',
-        androidVersion: '9 Pie',
+        androidVersion: '9',
         maintainers: [
             {
                 id: "bloomoslabs",
-                name: "BloomOS-Labs",
-                github: "BloomOS-Labs",
+                name: "BloomOS Labs",
+                github: "BloomOSLabs",
                 telegram: "BloomOSLabs"
             }
         ],
-    status: 'Official'
+        image: '/devices/OP4C7D.png',
+        status: 'Official',
     }
 ]

@@ -1,0 +1,170 @@
+.markdown-content {
+  width: 100%;
+}
+
+.markdown-content > * + * {
+  margin-top: 1.5rem;
+}
+
+.markdown-h1 {
+  margin-bottom: 1rem;
+
+  color: var(--md-on-surface);
+
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.markdown-h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+
+  color: var(--md-on-surface);
+
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.markdown-h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+
+  color: var(--md-on-surface);
+
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.markdown-p {
+  color: var(--text-secondary);
+
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.markdown-ul,
+.markdown-ol {
+  margin-left: 1.5rem;
+
+  color: var(--text-secondary);
+
+  line-height: 1.9;
+}
+
+.markdown-li + .markdown-li {
+  margin-top: 0.5rem;
+}
+
+.markdown-link {
+  color: var(--md-primary);
+
+  text-decoration: none;
+
+  transition: color 0.2s;
+}
+
+.markdown-link:hover {
+  text-decoration: underline;
+}
+
+.markdown-inline-code {
+  padding: 0.2rem 0.45rem;
+
+  border-radius: 0.4rem;
+
+  background: var(--md-surface-container-high);
+
+  font-family: monospace;
+}
+
+.markdown-code-block {
+  overflow-x: auto;
+
+  padding: 1.25rem;
+
+  border-radius: 1rem;
+
+  background: var(--md-surface-container);
+
+  border: 1px solid var(--md-outline-variant);
+}
+
+.markdown-code-block code {
+  font-family: monospace;
+
+  font-size: 0.95rem;
+}
+
+.markdown-blockquote {
+  padding-left: 1.25rem;
+
+  border-left: 4px solid var(--md-primary);
+
+  color: var(--text-secondary);
+
+  font-style: italic;
+}
+
+.markdown-divider {
+  border: none;
+
+  border-top: 1px solid var(--md-outline-variant);
+
+  margin-block: 2rem;
+}
+
+.markdown-table-wrapper {
+  overflow-x: auto;
+}
+
+.markdown-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.markdown-table th,
+.markdown-table td {
+  padding: 0.875rem 1rem;
+
+  border: 1px solid var(--md-outline-variant);
+
+  text-align: left;
+}
+
+.markdown-table th {
+  background: var(--md-surface-container);
+
+  font-weight: 600;
+}
+
+.markdown-image {
+  display: block;
+
+  max-width: 100%;
+
+  margin-inline: auto;
+
+  border-radius: 1rem;
+}
+
+.markdown-status {
+  text-align: center;
+
+  padding-block: 5rem;
+}
+
+@media (max-width: 640px) {
+  .markdown-h1 {
+    font-size: 2.4rem;
+  }
+
+  .markdown-h2 {
+    font-size: 1.8rem;
+  }
+
+  .markdown-h3 {
+    font-size: 1.35rem;
+  }
+}

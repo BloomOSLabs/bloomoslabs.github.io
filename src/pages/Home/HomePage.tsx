@@ -1,13 +1,15 @@
 import Hero from '../../components/shared/Hero'
 import Statistics from '../../components/shared/Statistics'
-import WhyBloomOS from '../../components/shared/WhyBloomOS'
+import AtaGlance from '../../components/shared/AtaGlance'
+import ReadyToTry from '../../components/shared/ReadyToTry'
 
 export default function HomePage () {
   return (
-    <main className='page-background page-stack'>
+    <main className='page-stack'>
       <Hero />
-      <WhyBloomOS />
+      <AtaGlance />
       <Statistics />
+      <ReadyToTry />
     </main>
   )
 }

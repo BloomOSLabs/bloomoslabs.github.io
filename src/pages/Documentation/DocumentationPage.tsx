@@ -1,10 +1,17 @@
-import ComingSoon from '../../components/shared/ComingSoon'
+import {
+  DocumentationHero,
+  DocumentationCategories,
+  FeaturedGuides,
+  DocumentationCTA
+} from '../../components/shared/Documentation'
 
-export default function DocumentationPage() {
+export default function DocumentationPage () {
   return (
-    <ComingSoon
-      title="Documentation"
-      description="Installation guides, build instructions and developer documentation will be available here."
-    />
+    <main className='page-stack'>
+      <DocumentationHero />
+      <DocumentationCategories />
+      <FeaturedGuides />
+      <DocumentationCTA />
+    </main>
   )
 }

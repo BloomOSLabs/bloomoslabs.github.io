@@ -7,6 +7,13 @@ import App from './App'
 
 import { ThemeProvider } from './context/ThemeContext'
 
+const redirect = sessionStorage.getItem('redirect')
+
+if (redirect) {
+  sessionStorage.removeItem('redirect')
+  window.history.replaceState(null, '', redirect)
+}
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>

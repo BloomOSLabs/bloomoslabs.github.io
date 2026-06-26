@@ -1,4 +1,6 @@
-import { ArrowRight, Download } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+
+import { Android } from '../../icons'
 
 import Container from '../../layout/Container'
 import Section from '../../layout/Section'
@@ -34,51 +36,47 @@ export default function Hero () {
 
           <div className='section-actions'>
             <LinkButton
-              to='/downloads'
+              to='/devices'
               size='large'
               className='button-padding-large'
-              startIcon={<Download size={20} />}
+              startIcon={<Android width={20} height={20} />}
             >
-              Download
+              Get BloomOS
             </LinkButton>
 
             <LinkButton
-              to='/devices'
+              to='/documentation'
               variant='tonal'
               size='large'
               className='button-padding-large'
               endIcon={<ArrowRight size={20} />}
             >
-              Supported Devices
+              Documentation
             </LinkButton>
           </div>
         </div>
 
-        <div className="section-device">
-  <div className="device-frame">
-    <div className="device-preview">
-      <span className="device-preview-badge">
-        Preview
-      </span>
+        <div className='section-device'>
+          <div className='device-frame'>
+            <div className='device-preview'>
+              <span className='device-preview-badge'>Preview</span>
 
-      <div className="device-preview-content">
-        <img
-          src="/bloom-logo-text.svg"
-          alt="BloomOS"
-          className="device-preview-logo"
-        />
+              <div className='device-preview-content'>
+                <img
+                  src='/bloom-logo-text-bg.svg'
+                  alt='BloomOS'
+                  className='device-preview-logo'
+                />
 
-        <h3 className="device-preview-title">
-          BloomOS
-        </h3>
+                <h3 className='device-preview-title'>BloomOS</h3>
 
-        <p className="device-preview-text">
-          Device preview coming soon
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+                <p className='device-preview-text'>
+                  Device preview coming soon
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </Container>
     </Section>
   )

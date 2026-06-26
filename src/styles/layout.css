@@ -3,16 +3,16 @@
 }
 
 .section-grid-content {
-    @apply mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-10;
+  @apply mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-10;
 }
 
 .section-grid--hero {
-    min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
 }
 
 .section-grid--hero .section-device {
-    @apply flex items-center justify-center;
-    margin-block: 2rem;
+  @apply flex items-center justify-center;
+  margin-block: 2rem;
 }
 
 @media (width >= 1024px) {
@@ -22,11 +22,11 @@
 }
 
 .section-content {
-    @apply flex flex-col gap-20;
+  @apply flex flex-col gap-20;
 }
 
 .section-inner {
-    @apply px-2 py-8 md:px-4 md:py-10 lg:px-6 lg:py-12;
+  @apply px-2 py-8 md:px-4 md:py-10 lg:px-6 lg:py-12;
 }
 
 .section-badge {
@@ -46,145 +46,143 @@
 }
 
 .section-visual {
-    @apply flex items-center justify-center py-10 lg:py-0;
+  @apply flex items-center justify-center py-10 lg:py-0;
 }
 
 .device-frame {
-    position: relative;
+  position: relative;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    aspect-ratio: 9 / 19;
+  aspect-ratio: 9 / 19;
 
-    width: 100%;
-    max-width: 320px;
+  width: 100%;
+  max-width: 320px;
 
-    border-radius: 48px;
+  border-radius: 48px;
 
-    background: var(--md-surface-container);
+  background: var(--md-surface-container);
 
-    box-shadow: var(--shadow-3);
+  box-shadow: var(--shadow-3);
 }
 
 .device-preview {
-    width: calc(100% - 28px);
-    height: calc(100% - 28px);
+  width: calc(100% - 28px);
+  height: calc(100% - 28px);
 
-    border-radius: 36px;
+  border-radius: 36px;
 
-    border: 1px solid var(--md-outline-variant);
+  border: 1px solid var(--md-outline-variant);
 
-    background:
-        linear-gradient(
-            180deg,
-            var(--md-surface-container-high),
-            var(--md-surface-container)
-        );
+  background: linear-gradient(
+    180deg,
+    var(--md-surface-container-high),
+    var(--md-surface-container)
+  );
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .device-preview-badge {
-    align-self: center;
+  align-self: center;
 
-    margin-top: 20px;
+  margin-top: 20px;
 
-    padding: 8px 18px;
+  padding: 8px 18px;
 
-    border-radius: 9999px;
+  border-radius: 9999px;
 
-    background: var(--md-primary-container);
+  background: var(--md-primary-container);
 
-    color: var(--md-on-primary-container);
+  color: var(--md-on-primary-container);
 
-    font-size: .75rem;
-    font-weight: 600;
-    letter-spacing: .08em;
-    text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .device-preview-content {
-    flex: 1;
+  flex: 1;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    gap: 20px;
+  gap: 20px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .device-preview-logo {
-    width: 88px;
-    height: 88px;
+  width: 88px;
+  height: 88px;
 
-    opacity: .9;
+  opacity: 0.9;
 }
 
 .device-preview-title {
-    color: var(--text-primary);
+  color: var(--text-primary);
 
-    font-size: 1.75rem;
-    font-weight: 700;
+  font-size: 1.75rem;
+  font-weight: 700;
 }
 
 .device-preview-text {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 
-    max-width: 220px;
+  max-width: 220px;
 
-    line-height: 1.7;
+  line-height: 1.7;
 }
 
 .background-glow {
   @apply pointer-events-none absolute left-1/2 top-1/2 h-175 w-175 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-10 blur-3xl;
 }
 
-.page-background {
-    background-color: var(--md-surface);
-}
-
 .page-stack {
-    @apply flex flex-col gap-20 lg:gap-28;
+  @apply flex flex-col gap-20 lg:gap-28;
 }
 
 .card {
-    @apply flex min-h-70 flex-col justify-center rounded-4xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  @apply flex min-h-70 flex-col justify-center rounded-4xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
 
-    background-color: var(--md-surface-container-low);
+  background-color: var(--md-surface-container-low);
 
-    border: 1px solid var(--md-outline-variant);
+  border: 1px solid var(--md-outline-variant);
+
+  padding-block: 2rem;
+  padding-inline: 2.5rem;
 }
 
 .card:hover {
-    background-color: var(--md-surface-container);
+  background-color: var(--md-surface-container);
 
-    border-color: var(--md-outline);
+  border-color: var(--md-outline);
 }
 
 .card--center {
-    @apply items-center text-center;
+  @apply items-center text-center;
 }
 
 .card--start {
-    @apply items-start text-left;
+  @apply items-start text-left;
 }
 
 .card-content {
-    @apply flex w-full flex-col justify-center gap-5;
+  @apply flex w-full flex-col justify-center gap-5;
 }
 
 .card--center .card-content {
-    @apply items-center;
+  @apply items-center;
 }
 
 .card--start .card-content {
-    @apply items-start;
+  @apply items-start;
 }

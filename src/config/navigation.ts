@@ -5,16 +5,12 @@ export interface NavigationItem {
 
 export const navigation: NavigationItem[] = [
     {
-        label: "Features",
-        href: "/features",
+        label: "Why BloomOS",
+        href: "/why-bloomos",
     },
     {
         label: "Devices",
         href: "/devices",
-    },
-    {
-        label: "Downloads",
-        href: "/downloads",
     },
     {
         label: "Documentation",

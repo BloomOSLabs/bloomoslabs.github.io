@@ -16,6 +16,11 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  position: relative;
+  z-index: 1;
+}
+
 body {
   min-width: 320px;
   min-height: 100vh;
@@ -61,17 +66,17 @@ button {
 }
 
 .animate-ripple {
-    animation: ripple 600ms ease-out forwards;
+  animation: ripple 600ms ease-out forwards;
 }
 
 @keyframes ripple {
-    from {
-        transform: scale(0);
-        opacity: .35;
-    }
+  from {
+    transform: scale(0);
+    opacity: 0.35;
+  }
 
-    to {
-        transform: scale(2.5);
-        opacity: 0;
-    }
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
 }

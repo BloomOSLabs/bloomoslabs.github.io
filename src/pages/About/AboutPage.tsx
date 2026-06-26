@@ -1,10 +1,14 @@
-import ComingSoon from '../../components/shared/ComingSoon'
+import { AboutHero, Roadmap } from '../../components/shared/About'
+import Mission from '../../components/shared/About/Mission'
+import Principles from '../../components/shared/About/Principles'
 
-export default function AboutPage() {
+export default function AboutPage () {
   return (
-    <ComingSoon
-      title="About BloomOS"
-      description="Learn about the vision, goals, philosophy and people behind BloomOS."
-    />
+    <>
+      <AboutHero />
+      <Mission />
+      <Principles />
+      <Roadmap />
+    </>
   )
 }

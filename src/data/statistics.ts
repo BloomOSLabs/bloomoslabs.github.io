@@ -1,5 +1,6 @@
+import type { ComponentType, SVGProps } from 'react'
+
 import {
-    Boxes,
     Smartphone,
     ShieldCheck,
     BadgeCheck,
@@ -7,11 +8,14 @@ import {
     ArrowRight
 } from 'lucide-react'
 
+
+import { Android } from '../components/icons'
+
 export interface Statistic {
     title: string
     value: string
     description: string
-    icon: typeof Smartphone
+    icon: ComponentType<SVGProps<SVGSVGElement>>
     action?: {
         label: string
         to: string
@@ -23,17 +27,13 @@ export const statistics: Statistic[] = [
         title: 'Supported Devices',
         value: '1',
         description: 'Officially maintained devices.',
-        icon: Smartphone,
-        action: {
-            label: 'View Devices',
-            to: '/devices'
-        }
+        icon: Smartphone
     },
     {
         title: 'Latest Android',
         value: '9',
         description: 'Current Android base.',
-        icon: Boxes
+        icon: Android
     },
     {
         title: 'OTA Updates',
@@ -52,10 +52,6 @@ export const statistics: Statistic[] = [
         value: 'Open',
         description: 'Community-driven development.',
         icon: GitBranch,
-        action: {
-            label: 'GitHub',
-            to: '/about'
-        }
     },
     {
         title: 'Project',
