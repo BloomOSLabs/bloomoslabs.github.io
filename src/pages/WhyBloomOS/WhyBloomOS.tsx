@@ -6,10 +6,11 @@ import CardLayout from '../../components/layout/CardLayout'
 import TonalIcon from '../../components/ui/TonalIcon'
 
 import { features } from '../../data/features'
+import PageTransition from '../../components/layout/PageTransition'
 
 export default function WhyBloomOSPage () {
   return (
-    <>
+    <PageTransition>
       <Section>
         <Container className='section-grid'>
           <div className='section-inner'>
@@ -53,9 +54,7 @@ export default function WhyBloomOSPage () {
                       {feature.title}
                     </h3>
 
-                    <p className='text-secondary'>
-                      {feature.description}
-                    </p>
+                    <p className='text-secondary'>{feature.description}</p>
                   </CardLayout>
                 )
               })}
@@ -63,6 +62,6 @@ export default function WhyBloomOSPage () {
           </div>
         </Container>
       </Section>
-    </>
+    </PageTransition>
   )
 }

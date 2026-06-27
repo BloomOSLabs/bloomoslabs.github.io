@@ -1,3 +1,4 @@
+import PageTransition from '../../components/layout/PageTransition'
 import {
   DocumentationHero,
   DocumentationCategories,
@@ -7,11 +8,13 @@ import {
 
 export default function DocumentationPage () {
   return (
-    <main className='page-stack'>
-      <DocumentationHero />
-      <DocumentationCategories />
-      <FeaturedGuides />
-      <DocumentationCTA />
-    </main>
+    <PageTransition>
+      <main className='page-stack'>
+        <DocumentationHero />
+        <DocumentationCategories />
+        <FeaturedGuides />
+        <DocumentationCTA />
+      </main>
+    </PageTransition>
   )
 }

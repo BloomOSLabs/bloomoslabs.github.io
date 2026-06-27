@@ -20,4 +20,8 @@ export const navigation: NavigationItem[] = [
         label: "About",
         href: "/about",
     },
+    {
+        label: "Legal",
+        href: "/legal"
+    }
 ];

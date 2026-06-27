@@ -6,6 +6,7 @@ import Container from '../../layout/Container'
 import Section from '../../layout/Section'
 
 import { DOCUMENTATION_BASE } from '../../../config/documentation'
+import PageTransition from '../../layout/PageTransition'
 
 interface MarkdownPageProps {
   path: string
@@ -54,24 +55,28 @@ export default function MarkdownPage ({ path }: MarkdownPageProps) {
   }, [path])
 
   return (
-    <Section>
-      <Container className='section-grid'>
-        <div className='section-inner'>
-          {loading && (
-            <p className='markdown-status text-secondary'>
-              Loading documentation...
-            </p>
-          )}
+    <PageTransition>
+      <Section>
+        <Container className='section-grid'>
+          <div className='section-inner'>
+            {loading && (
+              <p className='markdown-status text-secondary'>
+                Loading documentation...
+              </p>
+            )}
 
-          {error && (
-            <p className='markdown-status text-secondary'>
-              Unable to load this documentation.
-            </p>
-          )}
+            {error && (
+              <p className='markdown-status text-secondary'>
+                Unable to load this documentation.
+              </p>
+            )}
 
-          {!loading && !error && <MarkdownRenderer>{content}</MarkdownRenderer>}
-        </div>
-      </Container>
-    </Section>
+            {!loading && !error && (
+              <MarkdownRenderer>{content}</MarkdownRenderer>
+            )}
+          </div>
+        </Container>
+      </Section>
+    </PageTransition>
   )
 }

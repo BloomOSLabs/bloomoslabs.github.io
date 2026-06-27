@@ -1,6 +1,7 @@
 import { Navigate, useParams } from 'react-router-dom'
 
 import { MarkdownPage } from '../../components/shared/Documentation'
+import PageTransition from '../../components/layout/PageTransition'
 
 const documentationPages = {
   installation: 'installation/README.md',
@@ -21,6 +22,10 @@ export default function DocumentationContentPage () {
   }
 
   return (
-    <MarkdownPage path={documentationPages[section as DocumentationSection]} />
+    <PageTransition>
+      <MarkdownPage
+        path={documentationPages[section as DocumentationSection]}
+      />
+    </PageTransition>
   )
 }

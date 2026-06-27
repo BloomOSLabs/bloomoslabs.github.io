@@ -12,39 +12,45 @@ import AboutPage from '../pages/About/AboutPage'
 import TeamPage from '../pages/Team/TeamPage'
 import NotFoundPage from '../pages/NotFound/NotFoundPage'
 import DeviceInstallationPage from '../pages/Documentation/DeviceInstallationPage'
+import { AnimatePresence } from 'framer-motion'
+import LegalPage from '../pages/Legal/LegalPage'
 
 export default function Router () {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<MainLayout />}>
-          <Route path='/' element={<HomePage />} />
+    <AnimatePresence mode='wait'>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<MainLayout />}>
+            <Route path='/' element={<HomePage />} />
 
-          <Route path='/why-bloomos' element={<WhyBloomOSPage />} />
+            <Route path='/why-bloomos' element={<WhyBloomOSPage />} />
 
-          <Route path='/devices' element={<DevicesPage />} />
+            <Route path='/devices' element={<DevicesPage />} />
 
-          <Route path='/devices/:codename' element={<DeviceDetailsPage />} />
+            <Route path='/devices/:codename' element={<DeviceDetailsPage />} />
 
-          <Route path='/documentation' element={<DocumentationPage />} />
+            <Route path='/documentation' element={<DocumentationPage />} />
 
-          <Route
-            path='/documentation/:section'
-            element={<DocumentationContentPage />}
-          />
+            <Route
+              path='/documentation/:section'
+              element={<DocumentationContentPage />}
+            />
 
-          <Route
-            path='/documentation/installation/:codename'
-            element={<DeviceInstallationPage />}
-          />
+            <Route
+              path='/documentation/installation/:codename'
+              element={<DeviceInstallationPage />}
+            />
 
-          <Route path='/about' element={<AboutPage />} />
+            <Route path='/about' element={<AboutPage />} />
 
-          <Route path='/team' element={<TeamPage />} />
-        </Route>
+            <Route path='/legal' element={<LegalPage />} />
 
-        <Route path='*' element={<NotFoundPage />} />
-      </Routes>
-    </BrowserRouter>
+            <Route path='/team' element={<TeamPage />} />
+          </Route>
+
+          <Route path='*' element={<NotFoundPage />} />
+        </Routes>
+      </BrowserRouter>
+    </AnimatePresence>
   )
 }
